@@ -11,10 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:wght@500&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap" rel="stylesheet"h4
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo&display=swap" rel="stylesheet">
@@ -24,133 +21,110 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <img src="Imagenes/Logo-Makori.jpeg" alt="logotipo Makori">
+        <nav class="nav-bar">
+            <ul class="opciones">
+                <li class="nav-link"><a href="#section-caracteristicas">Características</a></li>
+                <li class="nav-link"><a href="#section-video">Presentación</a></li>
+                <li class="nav-link"><a href="#section-precios">Precios</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
-        <header id="header">
-            <div id="header-img">
-                <img src="Imagenes/Logo-Makori.jpeg" alt="logotipo Makori">
-            </div>
-            <nav id="nav-bar">
-                    <ul id="opciones">
-                        <li id="nav-link"><a href="#section-caracteristicas">Características</a></li>
-                        <li id="nav-link"><a href="#section-video">Presentación</a></li>
-                        <li id="nav-link"><a href="#section-precios">Precios</a></li>
-                    </ul>
-            </nav>
-        </header>
-        <section id="section-principal">
+        <section class="section-principal">
             <h2>Consolas importadas directo a tu casa</h2>
-            <form id="form" action="https://www.freecodecamp.com/email-submit">
-                <input id="email" name="email" type="email" placeholder="Ingrese su correo electrónico" required>
-                <input id="submit" type="submit" value="Empezar">
+            <form action="https://www.freecodecamp.com/email-submit">
+                <input class="casilla" id="email" name="email" type="email" placeholder="Ingrese su correo electrónico" required>
+                <input id="submit" type="submit" value="Empezar" class="boton">
             </form>
         </section>
-        <div id="div-contenedor">
-            <section id="section-caracteristicas">
-                <div id="div-caracteristicas">
-                    <div id="div-icono">
-                        <i class="fa-brands fa-playstation"></i>
-                    </div>
-                    <div id="div-descripcion">
-                        <h3>Consolas de primera calidad</h3>
-                        <p>Nuestras consolas provienen directamente de Japón.</p>
-                    </div>
+        <section class="section-caracteristicas">
+            <div class="div-caracteristicas">
+                <i class="fa-brands fa-playstation"></i>
+                <div class="div-descripcion">
+                    <h3>Consolas de primera calidad</h3>
+                    <p>Nuestras consolas provienen directamente de Japón.</p>
                 </div>
-                <div id="div-caracteristicas">
-                    <div id="div-icono">
-                        <i class="fa-solid fa-plane-circle-check"></i>
-                    </div>
-                    <div id="div-descripcion">
-                        <h3>Envios</h3>
-                        <p>Envíos a todo el país en menos de 72hs.</p>
-                    </div>
+            </div>
+            <div class="div-caracteristicas">
+                <i class="fa-solid fa-plane-circle-check"></i>
+                <div class="div-descripcion">
+                    <h3>Envios</h3>
+                    <p>Envíos a todo el país en menos de 72hs.</p>
                 </div>
-                <div id="div-caracteristicas">
-                    <div id="div-icono">
-                        <i class="fa-solid fa-shield-heart"></i>
-                    </div>
-                    <div id="div-descripcion">
-                        <h3>Test de calidad</h3>
-                        <p>Nuestros técnicos se aseguran de que cada consola funcione correctamente.</p>
-                    </div>
+            </div>
+            <div class="div-caracteristicas">
+                <i class="fa-solid fa-shield-heart"></i>
+                <div class="div-descripcion">
+                    <h3>Test de calidad</h3>
+                    <p>Nuestros técnicos se aseguran de que cada consola funcione correctamente.</p>
                 </div>
-            </section>
-            <section id="section-video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/JAQZMH3AEiE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </section>
-            <section id="section-precios">
-                <div id="producto">
-                    <div id="div-ps1">
-                        <p>PS1</p>
-                    </div>
-                    <h3>$35.000</h3>
-                    <ol>
-                        <li class="especificaciones">RAM 1gb</li>
-                        <li class="especificaciones">Resolución: 1280 px x 720 px</li>
-                        <li class="especificaciones">Capacidad: 16gb</li>
-                    </ol>
-                    <button>Seleccione</button>
+            </div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/JAQZMH3AEiE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+        <section class="section-consolas">
+            <article class="target">
+                <h4 class="consola">PS1</h4>
+                <div class="especificaciones">
+                <h4>$35.000</h4>
+                <p>RAM 1gb</p>
+                <p>Resolución: 1280 px x 720 px</p>
+                <p>Capacidad: 16gb</p>
                 </div>
-                <div id="producto">
-                    <div id="div-ps2">
-                        <p>PS2</p>
-                    </div>
-                    <h3>$25.000</h3>
-                    <ol>
-                        <li class="especificaciones">RAM: 32mb</li>
-                        <li class="especificaciones">Resolución: 1920 px x 1080 px</li>
-                        <li class="especificaciones">Capacidad: 8mb</li>
-                    </ol>
-                    <button>Seleccione</button>
+                <button>Seleccione</button>
+            </article>
+            <article class="target">
+                <h4 class="consola">PS2</h4>
+                <div class="especificaciones">
+                    <h4>$45.000</h4>
+                    <p>RAM: 32mb</p>
+                    <p>Resolución: 1920 px x 1080 px</p>
+                    <p>Capacidad: 8mb</p>
                 </div>
-                <div id="producto">
-                    <div id="div-ps3">
-                        <p>PS3</p>
-                    </div>
-                    <h3>$45.000</h3>
-                    <ol>
-                        <li class="especificaciones">RAM: 256mb</li>
-                        <li class="especificaciones">Resolución: 1920 px x 1080 px</li>
-                        <li class="especificaciones">Capacidad: 500gb</li>
-                    </ol>
-                    <button>Seleccione</button>
+                <button>Seleccione</button>
+            </article>
+            <article class="target">
+                <h4 class="consola">PS3</h4>
+                <div class="especificaciones">
+                <h4>$85.000</h4>
+                <p>RAM: 256mb</p>
+                <p>Resolución: 1920 px x 1080 px</p>
+                <p>Capacidad: 500gb</p>
                 </div>
-                <div id="producto">
-                    <div id="div-ps4">
-                        <p>PS4</p>
-                    </div>
-                    <h3>$135.000</h3>
-                    <ol>
-                        <li class="especificaciones">RAM: 8gb</li>
-                        <li class="especificaciones">Resolución: 1920 px x 1080 px</li>
-                        <li class="especificaciones">Capacidad: 1tb</li>
-                    </ol>
-                    <button>Seleccione</button>
+                <button>Seleccione</button>
+            </article>
+            <article class="target">
+                <h4 class="consola">PS4</h4>
+                <div class="especificaciones">
+                <h4>$135.000</h4>
+                <p>RAM: 8gb</p>
+                <p>Resolución: 1920 px x 1080 px</p>
+                <p>Capacidad: 1tb</p>
                 </div>
-                <div id="producto">
-                    <div id="div-ps5">
-                        <p>PS5 Standard / PS5 Digital Edition</p>
-                    </div>
-                    <h3>$190.000</h3>
-                    <ol>
-                        <li class="especificaciones">RAM: 16gb</li>
-                        <li class="especificaciones">Resolución: 3840px x 2160px</li>
-                        <li class="especificaciones">Capacidad: 825gb</li>
-                    </ol>
-                    <button>Seleccione</button>
+                <button>Seleccione</button>
+            </article>
+            <article class="target">
+                <h4 class="consola">PS5</h4>
+                <div class="especificaciones">
+                <h4>$190.000</h4>
+                <p>RAM: 16gb</p>
+                <p>Resolución: 3840px x 2160px</p>
+                <p>Capacidad: 825gb</p>
                 </div>
-            </section>
-            <footer>
-                <ul class="footer-list">
-                    <li class="list"><a href="#">Privacidad</a></li>
-                    <li class="list"><a href="#">Terminos</a></li>
-                    <li class="list"><a href="#">Contacto</a></li>
-                </ul>
-                <div class="copy">
-                    <i class="fa-solid fa-copyright"></i> Copyright 2022, Makori
-                </div>
-            </footer>
-        </div>
+                <button>Seleccione</button>
+            </article>
+        </section>
     </main>
-    
+    <footer>
+        <ul class="footer-list">
+            <li class="list"><a href="#">Privacidad</a></li>
+            <li class="list"><a href="#">Terminos</a></li>
+            <li class="list"><a href="#">Contacto</a></li>
+        </ul>
+        <div class="copy">
+            <i class="fa-solid fa-copyright"></i> Copyright 2022, Makori
+        </div>
+    </footer>
 </body>
 </html>

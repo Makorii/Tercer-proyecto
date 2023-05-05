@@ -1,162 +1,137 @@
 body {
     background-color: rgb(217, 186, 245);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-#header {
+header {
     width: 100%;
-    height: 10.5%;
+    padding: 10px;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     position: fixed;
     top: 0;
     background-color: rgba(242, 248, 158, 0.446);
- }
-
-#header-img {
-    width: 60%;
 }
 
 img {
-     width: 100px;
-     margin-right: 90%;
- }
+    width: 80px;
+}
 
- #nav-bar {
+.nav-bar {
     width: 40%;
     font-family: 'Zilla Slab', serif;
     font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
- 
-#nav-link {
-     display: flex;
-     flex-direction: row;
-     justify-content: space-around;
-     width: 50%;
- }
- a {
+
+.nav-link {
+    list-style: none;
+}
+
+a {
     text-decoration: none;
     color: black;
     font-family: 'Archivo', sans-serif;
- }
+}
 
- #opciones {
-     display: flex;
-     justify-content: space-between;
+.opciones {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 
- }
+}
 
- #section-principal {
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-     margin-top: 100px;
- }
+.section-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+}
 
- #form {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     width: 15%;
-     height: auto;
-     display: flex;
-     flex-direction: column;
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
 
- }
+.casilla {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
 
- #email {
-     width: 100%;
-     font-family: Verdana, Geneva, Tahoma, sans-serif;
-     font-size: 15px;
- }
+.boton {
+    width: 75%;
+    margin: 10px 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    background-color: rgb(79, 79, 221);
+    color: white;
+    border-width: 1px;
+    text-align: center;
+}
 
- #submit {
+.section-caracteristicas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
 
-     width: 75%;
-     margin: 10px 0;
-     font-family: Verdana, Geneva, Tahoma, sans-serif;
-     font-size: 15px;
-     background-color: rgb(79, 79, 221);
-     color: white;
-     border-width: 1px;
-     text-align: center;
-     
- }
-
- #div-contenedor {
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
- }
-
-#div-caracteristicas {
+.div-caracteristicas {
     display: flex;
     align-items: center;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 25px;
+    width: 30%;
 }
 
-#div-icono {
-    font-size: 35px;
-    margin-right: 10%;
+.div-descripcion { 
+    margin: 0 20px;
 }
 
-p {
-    margin: 5px;
-}
+/* SECTION CONSOLAS */
 
-#section-video {
-    margin: 5% 40%;
-}
-
-#section-precios {
+.section-consolas {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 40px;
-    justify-content: space-evenly;
-    width: 100%;
-}
-
-#producto {
-    border-width: 3px;
-    border-color: black;
-    border-style: solid;
-    text-align: center;
-}
-
-#div-ps1, #div-ps2, #div-ps3, #div-ps4, #div-ps5 {
-    margin: 0;
-    text-align: center;
-    border-width: 0px 0px 3px 0px;
-    border-color: black;
-    border-style: solid;
-    font-family: 'Archivo', sans-serif;
-    font-size: 20px;
-    background-color: rgb(194, 137, 244);
-    display: flex;
+    margin: 40px;
     justify-content: center;
+    align-items: center;
 }
 
-ol {
-    margin: 10px;
-    padding: 0px;
-    display: flex;
-    flex-direction: column;
-    list-style-type: none;
+.target {
+    border: 1px solid black;
     text-align: center;
+    margin: 12px;
+    font-family: 'Archivo', sans-serif;
+}
+
+.consola {
+    border-bottom: 1px solid black;
+    padding: 5px 0;
+    margin: 10px 0;
+}
+
+h4 {
+    margin: 5px;
 }
 
 .especificaciones {
-    margin: 5px;
-    font-family: 'Indie Flower', cursive;
-    font-size: 20px;
+    padding: 10px;
 }
 
+
 button {
-    width: 50%;
-    height: 13%;
+    padding: 5px 10px;
     background-color: black;
     color: white;
     margin: 20px;
@@ -166,14 +141,12 @@ button {
 }
 
 footer {
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
-    margin-right: 10%;
     background-color: rgb(194, 137, 244);
-    padding: 5px;
+    padding: 15px;
 }
 
 .footer-list {
@@ -196,317 +169,158 @@ h2 {
 }
 
 h3 {
-    margin-bottom: 10px;
     font-size: 22px;
     font-family: 'Archivo', sans-serif;
 }
 
 /* Mobile */
-@media (min-width: 320px) and (max-width: 480px) {
-    #header-img {
-        width: 15%;
+@media (max-width: 480px) {
+    header {
+        display: none;
     }
-    img {
-        width: 55px;
-        margin: 0;
-    }
-    #nav-bar {
-        width: 100%;
-        display: flex;
 
+    .section-principal {
+        height: 20vh;
     }
-    #opciones {
-        padding: 0;
-    }
-    #nav-link {
-        width: 75%;
-        margin: 8px;
-        font-size: 13px;
-    }
-    #section-principal {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-top: 80px;
-        width: 100%;
-    }
+
     h2 {
         font-size: 15px;
         text-align: center;
-        margin-top: 25px;
     }
-    #email, #submit {
-        width: 180px;
-        font-size: 11px;
+
+    .div-caracteristicas {
+        width: 90%;
     }
-    #div-icono {
-        font-size: 20px;
+
+    iframe {
+        width: 90%;
     }
+
+    .casilla {
+        font-size: 12px;
+        padding: 0 10px;
+    }
+
+    .boton {
+        width: auto;
+    }
+
     h3, p {
         font-size: 15px;
     }
-    #section-video {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        margin: 0px;
-        padding: 40px;
-    }
-    #section-precios {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-    #producto {
-        margin: 5px 60px;
     
-    }
     button {
         margin: 2px;
         font-size: 15px;
     }
+
     footer {
         margin: 0;
     }
 
     .footer-list, .copy {
         font-size: 10px;
-        margin: 0px 0px 3px 0px;
     }
 
 }
 
 /* ipads, tablets */
 @media (min-width: 481px) and (max-width: 768px) {
-    #header-img {
-        width: 15%;
+    header {
+        display: none;
     }
-    #header {
-        width: 100%;
-        height: auto;
-        display: flex;
-        justify-content: space-between;
+
+    .section-principal {
+        height: 20vh;
     }
-    img {
-        width: 65px;
-        margin: 0;
-    }
-    #nav-bar {
-        width: 80%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-    #nav-link {
-        margin: 5px;
-        font-size: 15px;
-    }
-    #opciones {
-        padding: 0;
-    }
-    #section-principal {
-        margin-top: 60px;
-    }
+
     h2 {
-        font-size: 20px;
+        font-size: 25px;
+        text-align: center;
     }
-    #email, #submit {
-        width: 200px;
+
+    .div-caracteristicas {
+        width: 90%;
+    }
+
+    iframe {
+        width: 90%;
+    }
+
+    .casilla {
         font-size: 13px;
     }
-    h3 {
+
+    .boton {
+        width: auto;
+    }
+
+    h3, p {
         font-size: 20px;
     }
-    p {
-        font-size: 15px;
-    }
-    #div-icono {
-        font-size: 15px;
-        margin: 0 20px;
-    }
-    #section-video {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        margin: 0px;
-        padding: 40px;
-    }
-    #producto {
-        margin: 5px 55px;
-    }
+    
     button {
-        margin: 5px;
+        margin: 2px;
         font-size: 15px;
-        height: auto;
     }
+    
     footer {
         margin: 0;
     }
-    .footer-list, .copy {
-        margin-bottom: 3px;
-        font-size: 13px;
 
+    .footer-list, .copy {
+        font-size: 12px;
     }
 }
 
 /* Small screens, laptops */
 @media (min-width: 769px) and (max-width: 1024px) {
-    #header-img {
-        width: 15%;
+    header {
+        justify-content: space-around;
     }
-    #header {
-        width: 100%;
-        height: auto;
-        display: flex;
-        justify-content: space-between;
-    }
+
     img {
-        width: 90px;
-        margin: 0;
+        width: 50px;
     }
-    #nav-bar {
+
+    .nav-bar{
+        width: 60%;
+    }
+    
+
+    .div-caracteristicas {
         width: 80%;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
     }
-    #nav-link {
-        margin: 10px;
-        font-size: 20px;
+
+
+    .casilla {
+        font-size: 13px;
     }
-    #opciones {
-        padding: 0;
-        margin-right: 25px;
+
+    .boton {
+        width: auto;
     }
-    #email {
-        width: 270px;
-        font-size: 18px;
-    }
-    #submit {
-        width: 150px;
-        font-size: 18px;
-    }
-    #div-icono{
-        font-size: 30px;
-        margin: 0 30px;
-    }
-    h3 {
-        font-size: 20px;
-    }
-    p {
+
+    
+    button {
+        margin: 2px;
         font-size: 15px;
     }
-    #producto {
-        margin: 0 50px 10px 50px;
-    }
-    #section-precios {
-        justify-content: space-around;
-        align-items: center;
-    }
+    
     footer {
         margin: 0;
     }
-    .footer-list, .copy {
-        margin-bottom: 5px;
-        font-size: 15px;
-    }
 
 }
+
 
 /* Desktops, large screen */
 @media (min-width: 1025px) and (max-width: 1200px) {
-    #header { 
-        width: 100%;
-        height: auto;
-        display: flex;
-        justify-content: space-between;
+
+    .div-caracteristicas {
+        width: 60%;
     }
-    #header-img {
-        width: 20%;
-    }
-    img {
-        width: 100px;
-    }
-    #nav-bar {
-        width: 80%;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-    }
-    #nav-link {
-        margin: 10px;
-        font-size: 20px;
-    }
-    #opciones {
-        padding: 0;
-        margin-right: 25px;
-    }
-    h2 {
-        font-size: 27px;
-    }
-    #email {
-        width: 280px;
-        font-size: 16px;
-    }
-    #submit {
-        width: 160px;
-        height: auto;
-    }
-    #div-icono {
-        font-size: 35px;
-        margin-right: 35px;
-    }
-    p {
-        font-size: 18px;
-    }
-    #producto {
-        margin: 15px 50px;
-    }
-    #section-precios {
-        justify-content: space-evenly;
-        align-items: center;
-    }
-    footer {
-        margin: 0;
-    }
-    .footer-list, .copy {
-        margin:0 0 5px 0;
-        font-size: 15px;
-    }
+    
 }
 
-/* Extra large screens, TV */
-@media (min-width: 1201px) {
-    #header {
-        width: 100%;
-        height: auto;
-        display: flex;
-        justify-content: space-between;
-    }
-    #email {
-        width: 280px;
-    }
-    #submit {
-        width: 160px;
-        font-size: 16px;
-    }
-    #producto {
-        margin: 15px 40px;
-    }
-    button {
-        margin: 15px;
-    }
-    #section-precios {
-        justify-content: space-evenly;
-        align-items: center;
-    }
-    footer {
-        margin: 0;
-    }
-    .footer-list, .copy {
-        margin:0 0 5px 0;
-        font-size: 15px;
-    }
-}
 
